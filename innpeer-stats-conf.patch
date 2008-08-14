@@ -1,0 +1,24 @@
+--- ./innpeer-stats.h.org	2003-09-09 20:40:13.000000000 +0200
++++ ./innpeer-stats.h	2008-08-14 16:04:35.217373330 +0200
+@@ -9,17 +9,17 @@
+ #define SKIP_SYSLOG_COLS	0
+ 
+ #define LOGFILE		"/var/log/news/news.notice"
+-#define ROOTDIR		"./var/www"		/* no trailing slash (nts) */
++#define ROOTDIR		"./srv/www"		/* no trailing slash (nts) */
+ #define DATADIR         "/innpeer-stats"    /* as seen from Web server + nts */
+ #define TEMPDIR		"/innpeer-stats/tmp"/* as seen from Web server + nts */
+ 
+ /* various default values (for CGI) that can be changed on command line */
+-#define GROUPRULESFILE  "/news/etc/innpeer-groups.conf"
++#define GROUPRULESFILE  "/etc/innpeer-stats/innpeer-groups.conf"
+ #define SPLIT_IN_FILES  0   /* boolean */
+ #define GROUP_PEERS     0   /* boolean */
+ 
+-#define HTML_HEADER	"/news/etc/innpeer-header.html"
+-#define HTML_FOOTER	"/news/etc/innpeer-footer.html"
++#define HTML_HEADER	"/etc/innpeer-stats/innpeer-header.html"
++#define HTML_FOOTER	"/etc/innpeer-stats/innpeer-footer.html"
+ #define CHANGE_HEADERS  0   /* If true, the previous 2 files must exist */
+ 
+ #define COLS_IN         3   /* list incoming peers in that number of columns */
