@@ -23,7 +23,7 @@ useful to tune your server or to debug strange problems.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} \
